@@ -50,7 +50,7 @@
                     </option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-update">Update</button>
             <a href="{{ route('categories.index') }}" class="btn btn-secondary">Back</a>
         </form>
     </div>

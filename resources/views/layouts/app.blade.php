@@ -13,7 +13,7 @@
 <body style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh;">
     @auth
     @if(auth()->user()->user_type === 'admin')
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow mb-4" style="background: #259242;">
         <div class="container">
             <a class="navbar-brand fw-bold"
                 href="{{ route('admin.dashboard') }}">{{ config('app.name', 'Laravel') }}</a>
@@ -24,21 +24,18 @@
             <div class="collapse navbar-collapse" id="adminNavbar">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link @if(request()->routeIs('categories.index')) active @endif"
-                            href="{{ route('categories.index') }}">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link @if(request()->routeIs('users.index')) active @endif"
-                            href="{{ route('users.index') }}">Users</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link @if(request()->routeIs('brands.index')) active @endif"
-                            href="{{ route('brands.index') }}">Brands</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link @if(request()->routeIs('products.index')) active @endif"
                             href="{{ route('products.index') }}">Products</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if(request()->routeIs('categories.index')) active @endif"
+                            href="{{ route('categories.index') }}">Product Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if(request()->routeIs('brands.index')) active @endif"
+                            href="{{ route('brands.index') }}">Product Brands</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link @if(request()->routeIs('discounts.index')) active @endif"
                             href="{{ route('discounts.index') }}">Discounts</a>
@@ -55,12 +52,17 @@
                         <a class="nav-link @if(request()->routeIs('admin.blogs.index')) active @endif"
                             href="{{ route('admin.blogs.index') }}">Blogs</a>
                     </li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link @if(request()->routeIs('admin.profile.edit')) active @endif"
                             href="{{ route('admin.profile.edit') }}">My Profile</a>
                     </li>
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link @if(request()->routeIs('users.index')) active @endif"
+                            href="{{ route('users.index') }}">User Management</a>
+                    </li>
                     <li class="nav-item">
                         <form action="{{ route('logout') }}" method="POST" class="d-inline">
                             @csrf
@@ -84,6 +86,37 @@
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.material.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <style>
+    .table thead,
+    .table th {
+        background: #eaf8d7 !important;
+        color: #000 !important;
+    }
+
+    .card-header {
+        background: #eaf8d7 !important;
+        color: #000 !important;
+    }
+
+    .btn-create,
+    .btn-create:focus,
+    .btn-create:active {
+        background-color: #259242 !important;
+        border-color: #259242 !important;
+        color: #fff !important;
+    }
+
+    .btn-edit,
+    .btn-edit:focus,
+    .btn-edit:active,
+    .btn-update,
+    .btn-update:focus,
+    .btn-update:active {
+        background-color: #eaf8d7 !important;
+        border-color: #eaf8d7 !important;
+        color: #259242 !important;
+    }
+    </style>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         var editorElement = document.querySelector('#productDescription');

@@ -28,7 +28,7 @@
                 <label>Confirm Password</label>
                 <input type="password" name="password_confirmation" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Update Profile</button>
+            <button type="submit" class="btn btn-update">Update Profile</button>
         </form>
     </div>
 @endsection

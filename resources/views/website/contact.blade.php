@@ -12,7 +12,7 @@
                     <div class="col-md-6 col-sm-12">
                         <!-- mn-breadcrumb-list start -->
                         <ul class="mn-breadcrumb-list">
-                            <li class="mn-breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="mn-breadcrumb-item"><a href="{{ route('website.home') }}">Home</a></li>
                             <li class="mn-breadcrumb-item active">Contact us Page</li>
                         </ul>
                         <!-- mn-breadcrumb-list end -->
@@ -37,7 +37,7 @@
                         <div class="icon"><i class="ri-mail-send-line"></i></div>
                         <div class="info">
                             <h3 class="title">Contact Mail</h3>
-                            <p>mail.example@gmail.com</p>
+                            <p>ecogrowfmsltd@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                         <div class="icon"><i class="ri-customer-service-2-line"></i></div>
                         <div class="info">
                             <h3 class="title">Contact Phone</h3>
-                            <p>(+91)-9876XXXXX</p>
+                            <p>+233 246533759 / +44 7956808066</p>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,8 @@
                         <div class="icon"><i class="ri-map-pin-line"></i></div>
                         <div class="info">
                             <h3 class="title">Address</h3>
-                            <p>Ruami Moraes Filho, Salvador - MA, 40352, Brazil.</p>
+                            <p>P.O.Box 1220, Dansoman - Accra. KF429, Uranus St (GT- 0420-3652- Accra -
+                                Bortianor).</p>
                         </div>
                     </div>
                 </div>

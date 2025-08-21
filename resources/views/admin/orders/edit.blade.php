@@ -22,7 +22,7 @@
                     <option value="paid" {{ $order->payment_status == 'paid' ? 'selected' : '' }}>Paid</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-success mt-3">Update Order</button>
+            <button type="submit" class="btn btn-update mt-3">Update Order</button>
             <a href="{{ route('admin.orders.index') }}" class="btn btn-secondary mt-3">Cancel</a>
         </form>
     </div>

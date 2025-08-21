@@ -25,9 +25,8 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/shipping-addresses/{id}', [ShippingAddressController::class, 'destroy'])->name('shipping_addresses.destroy');
 });
 
-Route::get('/', function () {
-    return view('website.home');
-})->name('website.home');
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('website.home');
 
 Route::get('/product/{id}', [App\Http\Controllers\ProductController::class, 'show'])->name('website.product.details');
 
@@ -39,15 +38,15 @@ Route::get('/product_details', function () {
 
 Route::get('/about', function () {
     return view('website.about');
-});
+})->name('website.about');
 
-Route::get('/insights', function () {
-    return view('website.blog');
-});
+Route::get('/blog', [App\Http\Controllers\WebsiteBlogController::class, 'index'])->name('website.blog');
+Route::get('/blog/{id}', [App\Http\Controllers\WebsiteBlogController::class, 'show'])->name('website.blog.details');
+
 
 Route::get('/contact', function () {
     return view('website.contact');
-});
+})->name('website.contact');
 
 
 // Cart routes

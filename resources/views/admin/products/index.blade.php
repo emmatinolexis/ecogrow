@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h2>Products</h2>
-        <a href="{{ route('products.create') }}" class="btn btn-primary mb-3 ripple-surface">Add Product</a>
+        <a href="{{ route('products.create') }}" class="btn btn-create mb-3 ripple-surface">Add Product</a>
         @if(session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
@@ -63,7 +63,7 @@
                         </div>
                         <div class="card-footer bg-white border-0 d-flex justify-content-between">
                             <a href="{{ route('products.edit', $product) }}"
-                                class="btn btn-warning btn-rounded btn-sm ripple-surface">Edit</a>
+                                class="btn btn-edit btn-rounded btn-sm ripple-surface">Edit</a>
                             <form action="{{ route('products.destroy', $product) }}" method="POST"
                                 style="display:inline-block;">
                                 @csrf

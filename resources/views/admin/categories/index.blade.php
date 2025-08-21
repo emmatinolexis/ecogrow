@@ -6,7 +6,7 @@
         @if(session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
-        <a href="{{ route('categories.create') }}" class="btn btn-primary mb-3">Add Category</a>
+        <a href="{{ route('categories.create') }}" class="btn btn-create mb-3">Add Category</a>
         <div class="mb-3">
             <input type="text" id="categoriesSearch" class="form-control" placeholder="Search categories...">
         </div>
@@ -36,7 +36,7 @@
                         </td>
                         <td>{{ ucfirst($category->status) }}</td>
                         <td>
-                            <a href="{{ route('categories.edit', $category) }}" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="{{ route('categories.edit', $category) }}" class="btn btn-edit btn-sm">Edit</a>
                             <form action="{{ route('categories.destroy', $category) }}" method="POST"
                                 style="display:inline-block;">
                                 @csrf

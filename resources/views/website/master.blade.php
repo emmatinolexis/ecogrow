@@ -45,197 +45,7 @@
 
         <!-- Sidebar -->
         <div class="mn-sidebar-overlay"></div>
-        <div class="mn-sidebar">
-            <div class="mn-sidebar-body">
-                <button type="button" class="side-close" title="Close"></button>
-                <ul class="mn-sb-list">
-                    <li class="mn-sb-title condense"><span>Fashion</span></li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="javascript:void(0)" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/clothes-2.svg" alt="clothes">
-                            <span class="condense">Clothes<i class="drop-arrow ri-arrow-down-s-line"></i></span>
-                        </a>
-                        <ul class="mn-sb-drop">
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">T-shirts</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Shirts</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">gowns</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Dresses</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">sharees</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">jeans</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/shoes.svg" alt="clothes">
-                            <span class="condense">Shoes</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/glasses.svg" alt="glasses">
-                            <span class="condense">glasses</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="javascript:void(0)" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/bag.svg" alt="bag">
-                            <span class="condense">Bags<i class="drop-arrow ri-arrow-down-s-line"></i></span>
-                        </a>
-                        <ul class="mn-sb-drop">
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Purse</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Bags</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">wallet</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/hat.svg" alt="hat">
-                            <span class="condense">Hat</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="javascript:void(0)" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/makeup.svg" alt="makeup">
-                            <span class="condense">Makeup<i class="drop-arrow ri-arrow-down-s-line"></i></span>
-                        </a>
-                        <ul class="mn-sb-drop">
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Lipstick</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">eye liner</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">nail paint</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Makeup kit</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="javascript:void(0)" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/cosmetics.svg" alt="cosmetics">
-                            <span class="condense">Cosmetics<i class="drop-arrow ri-arrow-down-s-line"></i></span>
-                        </a>
-                        <ul class="mn-sb-drop">
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Shampoo</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">face wash</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">body wash</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">sunscreen</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">serum</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mn-sb-title condense"><span>Bakery</span></li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="javascript:void(0)" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/cake.svg" alt="Cake">
-                            <span class="condense">Cake<i class="drop-arrow ri-arrow-down-s-line"></i></span>
-                        </a>
-                        <ul class="mn-sb-drop">
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">cup cake</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">pastry</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Cake</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/bread.svg" alt="Bread">
-                            <span class="condense">Bread</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-title condense"><span>Vegetables</span></li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="javascript:void(0)" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/tuber.svg" alt="tuber">
-                            <span class="condense">tuber root<i class="drop-arrow ri-arrow-down-s-line"></i></span>
-                        </a>
-                        <ul class="mn-sb-drop">
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Sweet Potato</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">Ginger</a>
-                            </li>
-                            <li class="list">
-                                <a href="shop-right-sidebar.html" class="mn-page-link drop">cassava</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/tomato.svg" alt="tomato">
-                            <span class="condense">Tomato</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/lemon.svg" alt="lemon">
-                            <span class="condense">Lemon</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-title condense"><span>Fruits</span></li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/avocado.svg" alt="avocado">
-                            <span class="condense">avocado</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/strawberry.svg" alt="strawberry">
-                            <span class="condense">strawberry</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/cherry.svg" alt="cherry">
-                            <span class="condense">cherry</span>
-                        </a>
-                    </li>
-                    <li class="mn-sb-item sb-drop-item">
-                        <a href="shop-right-sidebar.html" class="mn-drop-toggle">
-                            <img src="/assets/img/icons/lychee.svg" alt="Lychee">
-                            <span class="condense">Lychee</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <x-sidebar />
 
         <!-- Header -->
         <header>
@@ -269,13 +79,13 @@
                                                     <a href="{{ route('website.products') }}">Products</a>
                                                 </li>
                                                 <li class="non-drop">
-                                                    <a href="">About Shop</a>
+                                                    <a href="{{ route('website.about') }}">About Shop</a>
                                                 </li>
                                                 <li class="non-drop">
-                                                    <a href="">Insights</a>
+                                                    <a href="{{ route('website.blog') }}">Insights</a>
                                                 </li>
                                                 <li class="non-drop">
-                                                    <a href="">Contact</a>
+                                                    <a href="{{ route('website.contact') }}">Contact</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -292,85 +102,20 @@
                             <div class="mn-menu-inner">
                                 <div class="mn-menu-content">
                                     <ul>
-                                        <li>
-                                            <a href="index.html">Home</a>
+                                        <li class="non-drop">
+                                            <a href="{{ route('website.home') }}">Home</a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0)">Categories</a>
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="javascript:void(0)">Classic</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="shop-right-sidebar.html">Shop Right
-                                                                sidebar</a></li>
-                                                        <li><a href="shop-banner-right-sidebar.html">Banner
-                                                                Right sidebar</a></li>
-                                                        <li><a href="shop-full-width.html">Shop Full
-                                                                Width</a></li>
-                                                        <li><a href="shop-banner-full-width.html">Banner Full
-                                                                Width</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">List</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="shop-list-right-sidebar.html">Shop Right
-                                                                sidebar</a></li>
-                                                        <li><a href="shop-list-banner-right-sidebar.html">Banner
-                                                                Right sidebar</a></li>
-                                                        <li><a href="shop-list-full-width.html">Shop
-                                                                Full Width</a></li>
-                                                        <li><a href="shop-list-banner-full-width.html">Banner
-                                                                Full Width</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li class="non-drop">
+                                            <a href="{{ route('website.products') }}">Products</a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0)">Products</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="product-detail.html">product detail</a></li>
-                                                <li><a href="product-accordion.html">Product accordion</a></li>
-                                                <li><a href="product-full-width.html">Product full width</a></li>
-                                                <li><a href="product-accordion-full-width.html">accordion full width</a>
-                                                </li>
-                                            </ul>
+                                        <li class="non-drop">
+                                            <a href="{{ route('website.about') }}">About Shop</a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0)">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="contact-us.html">Contact Us</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="compare.html">Compare</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                @guest
-                                                <li><a href="{{ route('customer.login') }}">Login</a></li>
-                                                <li><a href="{{ route('customer.register') }}">Register</a></li>
-                                                @else
-                                                <li>
-                                                    <form method="POST" action="{{ route('customer.logout') }}">
-                                                        @csrf
-                                                        <button type="submit"
-                                                            style="background:none;border:none;color:inherit;cursor:pointer;">Logout</button>
-                                                    </form>
-                                                </li>
-                                                <li><a href="{{ route('shipping_addresses.index') }}">Shipping
-                                                        Address</a></li>
-
-                                                @endguest
-                                            </ul>
+                                        <li class="non-drop">
+                                            <a href="{{ route('website.blog') }}">Insights</a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0)">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
-                                                <li><a href="blog-full-width.html">Full Width</a></li>
-                                                <li><a href="blog-detail-right-sidebar.html">Detail Right Sidebar</a>
-                                                </li>
-                                                <li><a href="blog-detail-full-width.html">Detail Full Width</a></li>
-                                            </ul>
+                                        <li class="non-drop">
+                                            <a href="{{ route('website.contact') }}">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -424,27 +169,27 @@
                                 </a>
                                 <ul class="sub-menu">
                                     @guest
-                                    <li>
-                                        <a href="{{ route('customer.login') }}">Login</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('customer.register') }}">Register</a>
-                                    </li>
+                                        <li>
+                                            <a href="{{ route('customer.login') }}">Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('customer.register') }}">Register</a>
+                                        </li>
                                     @else
-                                    <li>
-                                        <form method="POST" action="{{ route('customer.logout') }}"
-                                            style="display:inline;">
-                                            @csrf
-                                            <button type="submit"
-                                                style="background:none;border:none;padding:0;margin:0;color:inherit;cursor:pointer;">Logout</button>
-                                        </form>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('checkout') }}">Checkout</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('shipping_addresses.index') }}">Shipping Address</a>
-                                    </li>
+                                        <li>
+                                            <form method="POST" action="{{ route('customer.logout') }}"
+                                                style="display:inline;">
+                                                @csrf
+                                                <button type="submit"
+                                                    style="background:none;border:none;padding:0;margin:0;color:inherit;cursor:pointer;">Logout</button>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('checkout') }}">Checkout</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('shipping_addresses.index') }}">Shipping Address</a>
+                                        </li>
                                     @endguest
 
                                 </ul>
@@ -893,6 +638,20 @@
         integrity="sha256-3gJwYp4gU1yPp3p3Zk+6U6zsz5W+C5l5vlaQtT+4QkPc=" crossorigin="anonymous"></script>
     <!-- Axios CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.parent-toggle').forEach(function (toggle) {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var drop = this.nextElementSibling;
+                    if (drop && drop.classList.contains('mn-sb-drop')) {
+                        drop.style.display = drop.style.display === 'none' ?
+                            'block' : 'none';
+                    }
+                });
+            });
+        });
+    </script>
     @yield('scripts')
 </body>
 

@@ -24,7 +24,8 @@
                     <option value="">None</option>
                     @foreach($categories as $cat)
                         <option value="{{ $cat->id }}" {{ old('parent_category_id') == $cat->id ? 'selected' : '' }}>
-                            {{ $cat->name }}</option>
+                            {{ $cat->name }}
+                        </option>
                     @endforeach
                 </select>
             </div>
@@ -43,7 +44,7 @@
                     <option value="inactive" {{ old('status') == 'inactive' ? 'selected' : '' }}>Inactive</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-create">Create</button>
             <a href="{{ route('categories.index') }}" class="btn btn-secondary">Back</a>
         </form>
     </div>

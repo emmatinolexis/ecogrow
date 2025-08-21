@@ -42,7 +42,7 @@
                 </select>
                 @error('status')<div class="text-danger">{{ $message }}</div>@enderror
             </div>
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-update">Update</button>
             <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>

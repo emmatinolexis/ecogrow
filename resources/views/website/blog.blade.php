@@ -1,4 +1,5 @@
 @extends('website.master')
+@php($search = $search ?? '')
 @section('content')
 
 <!-- Main Content -->
@@ -8,13 +9,13 @@
             <div class="col-12">
                 <div class="row gi_breadcrumb_inner">
                     <div class="col-md-6 col-sm-12">
-                        <h2 class="mn-breadcrumb-title">Blog Page</h2>
+                        <h2 class="mn-breadcrumb-title">Insights</h2>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <!-- mn-breadcrumb-list start -->
                         <ul class="mn-breadcrumb-list">
-                            <li class="mn-breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="mn-breadcrumb-item active">Blog Page</li>
+                            <li class="mn-breadcrumb-item"><a href="{{ route('website.home') }}">Home</a></li>
+                            <li class="mn-breadcrumb-item active">Insights</li>
                         </ul>
                         <!-- mn-breadcrumb-list end -->
                     </div>
@@ -26,131 +27,54 @@
         <div class="mn-blogs-rightside col-lg-8 col-md-12">
             <!-- Blog content Start -->
             <div class="mn-blogs-content mn-blog">
+                <form method="GET" action="{{ route('website.blog') }}" class="mb-4">
+                    <div class="input-group">
+                        <input type="text" name="search" class="form-control" placeholder="Search Our Blog"
+                            value="{{ $search }}">
+                        <button class="btn btn-success" type="submit"><i class="ri-search-line"></i> Search</button>
+                    </div>
+                </form>
                 <div class="mn-blogs-inner">
                     <div class="row">
+                        @forelse($blogs as $blog)
                         <div class="col-sm-6 col-12 mn-blog-block m-b-24">
                             <div class="mn-blog-card">
                                 <div class="blog-info">
-                                    <figure class="blog-img"><a href="#"><img src="assets/img/blog/1.jpg"
-                                                alt="news imag"></a>
+                                    <figure class="blog-img">
+                                        <a href="#">
+                                            @if($blog->display_image)
+                                            <img src="{{ asset('storage/' . $blog->display_image) }}" alt="blog image">
+                                            @else
+                                            <img src="https://via.placeholder.com/350x200?text=No+Image" alt="No image">
+                                            @endif
+                                        </a>
                                     </figure>
                                     <div class="detail">
-                                        <label>June 30, 2025 - <a href="#">Fashion</a></label>
-                                        <h3><a href="#">Marketing Guide: 5 Steps to Success to
-                                                way.</a></h3>
-                                        <div class="more-info">
-                                            <a href="blog-detail-right-sidebar.html">Read More<i
-                                                    class="ri-arrow-right-double-line"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-12 mn-blog-block m-b-24">
-                            <div class="mn-blog-card">
-                                <div class="blog-info">
-                                    <figure class="blog-img"><a href="#"><img src="assets/img/blog/2.jpg"
-                                                alt="news imag"></a>
-                                    </figure>
-                                    <div class="detail">
-                                        <label>April 02, 2025 - <a href="#">Cosmetics</a></label>
-                                        <h3><a href="#">Best way to solve business issue in
-                                                market.</a>
+                                        <label>{{ $blog->created_at->format('M d, Y') }}</label>
+                                        <h3><a
+                                                href="{{ route('website.blog.details', $blog->id) }}">{{ $blog->title }}</a>
                                         </h3>
                                         <div class="more-info">
-                                            <a href="blog-detail-right-sidebar.html">Read More<i
-                                                    class="ri-arrow-right-double-line"></i></a>
+                                            <a href="#">Read More<i class="ri-arrow-right-double-line"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-12 mn-blog-block m-b-24">
-                            <div class="mn-blog-card">
-                                <div class="blog-info">
-                                    <figure class="blog-img"><a href="#"><img src="assets/img/blog/3.jpg"
-                                                alt="news imag"></a>
-                                    </figure>
-                                    <div class="detail">
-                                        <label>Mar 09, 2025 - <a href="#">Bags</a></label>
-                                        <h3><a href="#">31 grocery customer service stats know in
-                                                2025.</a></h3>
-                                        <div class="more-info">
-                                            <a href="blog-detail-right-sidebar.html">Read More<i
-                                                    class="ri-arrow-right-double-line"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        @empty
+                        <div class="col-12">
+                            <div class="alert alert-warning">No blogs found.</div>
                         </div>
-                        <div class="col-sm-6 col-12 mn-blog-block m-b-24">
-                            <div class="mn-blog-card">
-                                <div class="blog-info">
-                                    <figure class="blog-img"><a href="#"><img src="assets/img/blog/4.jpg"
-                                                alt="news imag"></a>
-                                    </figure>
-                                    <div class="detail">
-                                        <label>January 25, 2025 - <a href="#">Shoes</a></label>
-                                        <h3><a href="#">Business ideas to grow your business
-                                                traffic.</a></h3>
-                                        <div class="more-info">
-                                            <a href="blog-detail-right-sidebar.html">Read More<i
-                                                    class="ri-arrow-right-double-line"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-12 mn-blog-block m-b-24">
-                            <div class="mn-blog-card">
-                                <div class="blog-info">
-                                    <figure class="blog-img"><a href="#"><img src="assets/img/blog/5.jpg"
-                                                alt="news imag"></a>
-                                    </figure>
-                                    <div class="detail">
-                                        <label>December 10, 2026 - <a href="#">Perfumes</a></label>
-                                        <h3><a href="#">Marketing Guide: 5 Steps way to Success.</a>
-                                        </h3>
-                                        <div class="more-info">
-                                            <a href="blog-detail-right-sidebar.html">Read More<i
-                                                    class="ri-arrow-right-double-line"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-12 mn-blog-block m-b-24">
-                            <div class="mn-blog-card">
-                                <div class="blog-info">
-                                    <figure class="blog-img"><a href="#"><img src="assets/img/blog/6.jpg"
-                                                alt="news imag"></a>
-                                    </figure>
-                                    <div class="detail">
-                                        <label>August 08, 2027 - <a href="#">Bags</a></label>
-                                        <h3><a href="#">15 customer service stats idea know in
-                                                2026.</a></h3>
-                                        <div class="more-info">
-                                            <a href="blog-detail-right-sidebar.html">Read More<i
-                                                    class="ri-arrow-right-double-line"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforelse
                     </div>
                 </div>
                 <!-- Pagination Start -->
                 <div class="mn-pro-pagination">
-                    <span>Showing 1-6 of 20 items</span>
-                    <ul class="mn-pro-pagination-inner">
-                        <li><a class="active" href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><span>...</span></li>
-                        <li><a href="#">8</a></li>
-                        <li><a class="next" href="#">Next <i class="ri-arrow-right-double-line"></i></a>
-                        </li>
-                    </ul>
+                    <span>Showing {{ $blogs->firstItem() }}-{{ $blogs->lastItem() }} of {{ $blogs->total() }}
+                        items</span>
+                    <div>
+                        {{ $blogs->links() }}
+                    </div>
                 </div>
                 <!-- Pagination End -->
             </div>
@@ -159,141 +83,33 @@
 
         <!-- Sidebar Area Start -->
         <div class="mn-blogs-sidebar mn-blogs-leftside col-lg-4 col-md-12 m-t-991">
-            <div class="mn-blog-search">
-                <form class="mn-blog-search-form" action="#">
-                    <input class="form-control" placeholder="Search Our Blog" type="text">
-                    <button class="submit" type="submit"><i class="ri-search-line"></i></button>
-                </form>
-            </div>
+            <!-- Recent Products Sidebar -->
             <div class="mn-blog-sidebar-wrap">
-                <!-- Sidebar Recent Blog Block -->
                 <div class="mn-sidebar-block mn-sidebar-recent-blog">
                     <div class="mn-sb-title">
-                        <h3 class="mn-sidebar-title">Recent Articles</h3>
+                        <h3 class="mn-sidebar-title">Recent Products</h3>
                     </div>
                     <div class="mn-blog-block-content mn-sidebar-dropdown">
-                        <div class="mn-sidebar-block-item">
+                        @forelse($recentProducts as $product)
+                        <div class="mn-sidebar-block-item mb-2">
                             <div class="mn-sidebar-block-img">
-                                <img src="assets/img/blog/6.jpg" alt="blog imag">
+                                <img src="{{ $product->images->first() ? asset('storage/' . $product->images->first()->image_url) : asset('images/default.png') }}"
+                                    alt="{{ $product->name }}">
                             </div>
                             <div class="mn-sidebar-block-detial">
-                                <h5 class="mn-blog-title"><a href="blog-detail-right-sidebar.html">The best
-                                        fashion influencers.</a></h5>
-                                <div class="mn-blog-date">February 10, 2025-2026</div>
-                                <a href="blog-right-sidebar.html">- Organic</a>
+                                <h5 class="mn-blog-title"><a
+                                        href="{{ route('website.product.details', $product->id) }}">{{ $product->name }}</a>
+                                </h5>
+                                <div class="mn-blog-date">GHS {{ number_format($product->price, 2) }}</div>
+                                <a
+                                    href="{{ route('website.product.details', $product->id) }}">{{ $product->category->name ?? '' }}</a>
                             </div>
                         </div>
-                        <div class="mn-sidebar-block-item">
-                            <div class="mn-sidebar-block-img">
-                                <img src="assets/img/blog/5.jpg" alt="blog imag">
-                            </div>
-                            <div class="mn-sidebar-block-detial">
-                                <h5 class="mn-blog-title"><a href="blog-detail-right-sidebar.html">Vogue
-                                        Shopping
-                                        Weekend.</a></h5>
-                                <div class="mn-blog-date">March 14, 2025-2026</div>
-                                <a href="blog-right-sidebar.html">- Fruits</a>
-                            </div>
-                        </div>
-                        <div class="mn-sidebar-block-item">
-                            <div class="mn-sidebar-block-img">
-                                <img src="assets/img/blog/4.jpg" alt="blog imag">
-                            </div>
-                            <div class="mn-sidebar-block-detial">
-                                <h5 class="mn-blog-title"><a href="blog-detail-right-sidebar.html">Fashion
-                                        Market
-                                        Reveals Her Jacket.</a></h5>
-                                <div class="mn-blog-date">June 09, 2025-2026</div>
-                                <a href="blog-right-sidebar.html">- Vegetables</a>
-                            </div>
-                        </div>
-                        <div class="mn-sidebar-block-item">
-                            <div class="mn-sidebar-block-img">
-                                <img src="assets/img/blog/3.jpg" alt="blog imag">
-                            </div>
-                            <div class="mn-sidebar-block-detial">
-                                <h5 class="mn-blog-title"><a href="blog-detail-right-sidebar.html">Summer
-                                        Trending Fashion Market.</a></h5>
-                                <div class="mn-blog-date">July 17, 2025-2026</div>
-                                <a href="blog-right-sidebar.html">- Fastfood</a>
-                            </div>
-                        </div>
-                        <div class="mn-sidebar-block-item">
-                            <div class="mn-sidebar-block-img">
-                                <img src="assets/img/blog/2.jpg" alt="blog imag">
-                            </div>
-                            <div class="mn-sidebar-block-detial">
-                                <h5 class="mn-blog-title"><a href="blog-detail-right-sidebar.html">Winter 2025
-                                        Trending Fashion Market.</a></h5>
-                                <div class="mn-blog-date">August 02, 2025-2026</div>
-                                <a href="blog-right-sidebar.html">- Vegetables</a>
-                            </div>
-                        </div>
+                        @empty
+                        <div class="mn-sidebar-block-item">No recent products found.</div>
+                        @endforelse
                     </div>
                 </div>
-                <!-- Sidebar Recent Blog Block -->
-                <!-- Sidebar Category Block -->
-                <div class="mn-sidebar-block">
-                    <div class="mn-sb-title">
-                        <h3 class="mn-sidebar-title">Categories</h3>
-                    </div>
-                    <div class="mn-blog-block-content mn-sidebar-dropdown">
-                        <ul>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox" checked> <a href="javascript:void(0)">Dairy &
-                                        Milk<span title="Products">- 68</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox"> <a href="javascript:void(0)">Seafood<span title="Products">-
-                                            58</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox"> <a href="javascript:void(0)">Bakery<span title="Products">-
-                                            84</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox"> <a href="javascript:void(0)">cosmetics<span
-                                            title="Products">-
-                                            63</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox"> <a href="javascript:void(0)">electrics<span
-                                            title="Products">-
-                                            75</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox"> <a href="javascript:void(0)">phones<span title="Products">-
-                                            26</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox"> <a href="javascript:void(0)">Clothes<span title="Products">-
-                                            39</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mn-sidebar-block-item">
-                                    <input type="checkbox"> <a href="javascript:void(0)">Watch<span title="Products">-
-                                            48</span></a><span class="checked"></span>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <!-- Sidebar Category Block -->
             </div>
         </div>
     </div>
