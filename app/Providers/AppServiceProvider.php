@@ -37,5 +37,15 @@ class AppServiceProvider extends ServiceProvider
             $adapter = new GoogleDriveAdapter($service, $config['folderId']);
             return new Filesystem($adapter);
         });
+
+        // Make cartCount available in all website views
+        \View::composer('website.*', function ($view) {
+            $cartCount = 0;
+            if (auth()->check()) {
+                $cart = \App\Models\Cart::where('user_id', auth()->id())->with('items')->first();
+                $cartCount = $cart ? $cart->items->sum('quantity') : 0;
+            }
+            $view->with('cartCount', $cartCount);
+        });
     }
 }

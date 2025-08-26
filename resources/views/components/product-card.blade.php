@@ -2,13 +2,14 @@
     <div class="mn-product-img">
         <div class="mn-img">
             <a href="{{ route('website.product.details', $product->id) }}" class="image">
-                <img class="main-img"
-                    src="{{ $product->images->first() ? asset('storage/' . $product->images->first()->image_url) : asset('images/default.png') }}"
-                    alt="{{ $product->name }}" style="height:250px;width:100%;object-fit:cover;">
+                @php $main = $product->images->where('is_main', 1)->first(); @endphp
+
+                <img class="main-img" src="{{ asset('storage/' . $main->image_url) }}" alt="{{ $product->name }}"
+                    style="height:250px;width:100%;object-fit:cover;">
 
                 @if($product->images->count() > 1)
-                    <img class="hover-img" src="{{ asset('storage/' . $product->images[1]->image_url) }}"
-                        alt="{{ $product->name }}" style="height:250px;width:100%;object-fit:cover;">
+                <img class="hover-img" src="{{ asset('storage/' . $product->images[1]->image_url) }}"
+                    alt="{{ $product->name }}" style="height:250px;width:100%;object-fit:cover;">
                 @endif
             </a>
 
@@ -40,12 +41,12 @@
             <a href="{{ route('website.product.details', $product->id) }}">{{ $product->name }}</a>
         </h5>
         <p class="mn-info">
-            {!! \Illuminate\Support\Str::limit($product->description, 50) !!}
+            <!-- {!! \Illuminate\Support\Str::limit($product->description, 50) !!} -->
         </p>
         <div class="mn-price">
             <div class="mn-price-new">GHC{{ $product->discounted_price }}</div>
             @if($product->active_discount)
-                <div class="mn-price-old">GHC{{ $product->price }}</div>
+            <div class="mn-price-old">GHC{{ $product->price }}</div>
             @endif
         </div>
     </div>

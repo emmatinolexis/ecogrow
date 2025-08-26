@@ -8,7 +8,7 @@
                     @if($category->children->count())
                         <a href="javascript:void(0)" class="mn-drop-toggle parent-toggle">
                             @if($category->icon_url)
-                                <img src="{{ asset('storage/category_icons/' . $category->icon_url) }}" alt="{{ $category->name }}">
+                                <img src="{{ $category->icon_url }}" alt="{{ $category->name }}">
                             @else
                                 <img src="/assets/img/icons/category.svg" alt="{{ $category->name }}">
                             @endif
@@ -22,8 +22,7 @@
                                 <li class="list">
                                     <a href="{{ route('website.products', ['category' => $sub->id]) }}" class="mn-page-link drop">
                                         @if($sub->icon_url)
-                                            <img src="{{ asset('storage/category_icons/' . $sub->icon_url) }}" alt="{{ $sub->name }}"
-                                                style="width:18px;height:18px;">
+                                            <img src="{{ $sub->icon_url }}" alt="{{ $sub->name }}" style="width:18px;height:18px;">
                                         @else
                                             <img src="/assets/img/icons/category.svg" alt="{{ $sub->name }}"
                                                 style="width:18px;height:18px;">
@@ -36,7 +35,7 @@
                     @else
                         <a href="{{ route('website.products', ['category' => $category->id]) }}" class="mn-drop-toggle">
                             @if($category->icon_url)
-                                <img src="{{ asset('storage/category_icons/' . $category->icon_url) }}" alt="{{ $category->name }}">
+                                <img src="{{ $category->icon_url }}" alt="{{ $category->name }}">
                             @else
                                 <img src="/assets/img/icons/category.svg" alt="{{ $category->name }}">
                             @endif

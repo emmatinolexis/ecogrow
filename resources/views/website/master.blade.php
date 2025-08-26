@@ -10,7 +10,7 @@
     <meta name="description" content="Best multipurpose ecommerce html template for your online store.">
     <meta name="author" content="Maraviya Infotech">
 
-    <title>Mantu - eCommerce HTML Template.</title>
+    <title>{{ env('APP_NAME') }}</title>
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon/favicon.png">
@@ -38,13 +38,14 @@
         <!-- Loader -->
         <div id="mn-overlay">
             <div class="loader">
-                <img src="/assets/img/logo/loader.png" alt="loader">
+                <!-- <img src="{{ asset('assets/img/logo.png') }}" alt="loader"> -->
                 <span class="shape"></span>
             </div>
         </div>
 
         <!-- Sidebar -->
-        <div class="mn-sidebar-overlay"></div>
+        <!-- <div class="mn-sidebar-overlay"></div> -->
+        <div class="mn-sidebar-overlay" style="display:none;"></div>
         <x-sidebar />
 
         <!-- Header -->
@@ -52,12 +53,13 @@
             <div class="mn-header">
                 <div class="mn-header-items">
                     <div class="left-header">
-                        <a href="javascript:void(0)" class="mn-toggle-sidebar">
+                        <!-- <a href="javascript:void(0)" class="mn-toggle-sidebar">
                             <span class="outer-ring">
                                 <span class="inner-ring"></span>
                             </span>
-                        </a>
-                        <a href="index.html" class="logo"><img src="/assets/img/logo/logo.png" alt="logo"></a>
+                        </a> -->
+                        <a href="{{ route('website.home') }}" class="logo"><img src="{{ asset('assets/img/logo.png') }}"
+                                alt="logo"></a>
                         <a href="javascript:void(0)" class="mn-toggle-menu">
                             <div class="header-icon">
                                 <i class="ri-menu-3-fill"></i>
@@ -169,32 +171,32 @@
                                 </a>
                                 <ul class="sub-menu">
                                     @guest
-                                        <li>
-                                            <a href="{{ route('customer.login') }}">Login</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('customer.register') }}">Register</a>
-                                        </li>
+                                    <li>
+                                        <a href="{{ route('customer.login') }}">Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('customer.register') }}">Register</a>
+                                    </li>
                                     @else
-                                        <li>
-                                            <form method="POST" action="{{ route('customer.logout') }}"
-                                                style="display:inline;">
-                                                @csrf
-                                                <button type="submit"
-                                                    style="background:none;border:none;padding:0;margin:0;color:inherit;cursor:pointer;">Logout</button>
-                                            </form>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('checkout') }}">Checkout</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('shipping_addresses.index') }}">Shipping Address</a>
-                                        </li>
+                                    <li>
+                                        <form method="POST" action="{{ route('customer.logout') }}"
+                                            style="display:inline;">
+                                            @csrf
+                                            <button type="submit"
+                                                style="background:none;border:none;padding:0;margin:0;color:inherit;cursor:pointer;">Logout</button>
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('checkout') }}">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('shipping_addresses.index') }}">Shipping Address</a>
+                                    </li>
                                     @endguest
 
                                 </ul>
                             </div>
-                            <div class="mn-tool-wish">
+                            <!-- <div class="mn-tool-wish">
                                 <a href="javascript:void(0)" class="mn-main-wishlist mn-wishlist-toggle">
                                     <span class="label lbl-1">3</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" x="0"
@@ -207,10 +209,10 @@
                                         </g>
                                     </svg>
                                 </a>
-                            </div>
+                            </div> -->
                             <div class="mn-tool-cart">
-                                <a href="javascript:void(0)" class="mn-main-cart mn-cart-toggle">
-                                    <span class="label lbl-2">4</span>
+                                <a href="{{ route('cart.index') }}" class="mn-main-cart">
+                                    <span class="label lbl-2">{{ $cartCount ?? 0 }}</span>
                                     <svg class="svg-icon" viewBox="0 0 1024 1024" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -233,13 +235,12 @@
                 <div class="footer-container">
                     <div class="footer-top p-tb-30">
                         <div class="row m-minus-991">
-                            <div class="col-sm-12 col-lg-3 mn-footer-cat">
+                            <div class="col-sm-12 col-lg-4 mn-footer-cat">
                                 <div class="mn-footer-widget mn-footer-company">
-                                    <img src="/assets/img/logo/logo.png" class="mn-footer-logo" alt="footer logo">
-                                    <img src="/assets/img/logo/logo-dark.png" class="mn-footer-dark-logo"
+                                    <img src="{{ asset('assets/img/logo.png') }}" class="mn-footer-logo"
                                         alt="footer logo">
-                                    <p class="mn-footer-detail">The Mantu is the biggest market of grocery products. Get
-                                        your daily needs from our store.</p>
+                                    <img src="{{ asset('assets/img/logo.png') }}" class="mn-footer-dark-logo"
+                                        alt="footer logo">
                                     <div class="mn-app-store">
                                         <a href="javascript:void(0)" class="app-img">
                                             <img src="/assets/img/footer/android.png" class="adroid" alt="apple">
@@ -250,55 +251,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-2 mn-footer-info">
-                                <div class="mn-footer-widget">
-                                    <h4 class="mn-footer-heading">Category</h4>
-                                    <div class="mn-footer-links mn-footer-dropdown">
-                                        <ul class="align-items-center">
-                                            <li class="mn-footer-link">
-                                                <a href="shop-right-sidebar.html">Fashion</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="shop-right-sidebar.html">Cosmetics</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="shop-right-sidebar.html">Bags & Purse</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="shop-right-sidebar.html">Shoes</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="shop-right-sidebar.html">Belts</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="shop-right-sidebar.html">Perfumes</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-sm-12 col-lg-2 mn-footer-account">
                                 <div class="mn-footer-widget">
                                     <h4 class="mn-footer-heading">Company</h4>
                                     <div class="mn-footer-links mn-footer-dropdown">
                                         <ul class="align-items-center">
                                             <li class="mn-footer-link">
-                                                <a href="about-us.html">About us</a>
+                                                <a href="{{ route('website.about') }}">About us</a>
+                                            </li>
+
+                                            <li class="mn-footer-link">
+                                                <a href="#">Legal Notice</a>
                                             </li>
                                             <li class="mn-footer-link">
-                                                <a href="track-order.html">Delivery</a>
+                                                <a href="#">Terms of use</a>
                                             </li>
+
                                             <li class="mn-footer-link">
-                                                <a href="faq.html">Legal Notice</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="terms.html">Terms of use</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="checkout.html">Secure payment</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="contact-us.html">Contact us</a>
+                                                <a href="{{ route('website.contact') }}">Contact us</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -310,28 +280,20 @@
                                     <div class="mn-footer-links mn-footer-dropdown">
                                         <ul class="align-items-center">
                                             <li class="mn-footer-link">
-                                                <a href="login.html">Sign In</a>
+                                                <a href="{{ route('customer.login') }}">Sign In</a>
                                             </li>
                                             <li class="mn-footer-link">
-                                                <a href="cart.html">View Cart</a>
+                                                <a href="{{ route('cart.index') }}">View Cart</a>
                                             </li>
                                             <li class="mn-footer-link">
-                                                <a href="faq.html">Return Policy</a>
+                                                <a href="#">Return Policy</a>
                                             </li>
-                                            <li class="mn-footer-link">
-                                                <a href="shop-right-sidebar.html">Become a Vendor</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="product-detail.html">Affiliate Program</a>
-                                            </li>
-                                            <li class="mn-footer-link">
-                                                <a href="checkout.html">Payments</a>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 mn-footer-cont-social">
+                            <div class="col-sm-12 col-lg-4 mn-footer-cont-social">
                                 <div class="mn-footer-contact">
                                     <div class="mn-footer-widget">
                                         <h4 class="mn-footer-heading">Contact</h4>
@@ -341,20 +303,21 @@
                                                     <span class="mt-15px">
                                                         <i class="ri-map-pin-line"></i>
                                                     </span>
-                                                    <p>1234 Elm Street Springfield Avenue, Brooklyn den, IL 62704 USA.
+                                                    <p>P.O.Box 1220, Dansoman - Accra. KF429, Uranus St (GT- 0420-3652-
+                                                        Accra - Bortianor).
                                                     </p>
                                                 </li>
                                                 <li class="mn-footer-link mn-foo-call">
                                                     <span>
                                                         <i class="ri-whatsapp-line"></i>
                                                     </span>
-                                                    <a href="tel:+009876543210">+00 9876543210</a>
+                                                    <a href="tel:+009876543210">+233 246533759</a>
                                                 </li>
                                                 <li class="mn-footer-link mn-foo-mail">
                                                     <span>
                                                         <i class="ri-mail-line"></i>
                                                     </span>
-                                                    <a href="mailto:example@email.com">example@email.com</a>
+                                                    <a href="mailto:ecogrowfmsltd@gmail.com">ecogrowfmsltd@gmail.com</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -389,17 +352,18 @@
                                 <div class="footer-copy">
                                     <div class="footer-bottom-copy ">
                                         <div class="mn-copy">Copyright © <span id="copyright_year"></span>
-                                            <a class="site-name" href="index.html">The Mantu</a> all rights reserved.
+                                            <a class="site-name" href="{{ route('website.home') }}">EcoGrow</a> all
+                                            rights reserved.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="footer-bottom-right">
+                                <!-- <div class="footer-bottom-right">
                                     <div class="footer-bottom-payment d-flex justify-content-center">
                                         <div class="payment-link">
                                             <img src="/assets/img/footer/payment.png" alt="payment">
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -567,7 +531,7 @@
 
         <!-- Wishlist sidebar Start -->
         <div class="mn-side-wishlist-overlay"></div>
-        <div id="mn-side-wishlist" class="mn-side-wishlist">
+        <!-- <div id="mn-side-wishlist" class="mn-side-wishlist">
             <div class="mn-wishlist-inner">
                 <div class="mn-wishlist-top">
                     <div class="mn-wishlist-title">
@@ -616,7 +580,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
 
     <!-- Vendor Custom -->
@@ -639,18 +603,26 @@
     <!-- Axios CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.parent-toggle').forEach(function (toggle) {
-                toggle.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    var drop = this.nextElementSibling;
-                    if (drop && drop.classList.contains('mn-sb-drop')) {
-                        drop.style.display = drop.style.display === 'none' ?
-                            'block' : 'none';
-                    }
-                });
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.parent-toggle').forEach(function(toggle) {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                var drop = this.nextElementSibling;
+                if (drop && drop.classList.contains('mn-sb-drop')) {
+                    drop.style.display = drop.style.display === 'none' ?
+                        'block' : 'none';
+                }
             });
         });
+    });
+    $(document).ready(function() {
+        $('.mn-sidebar-overlay').hide(); // make sure overlay is hidden
+        $('.mn-sidebar').addClass("sidebar-hide");
+        $('header').addClass("sb-hide");
+        $('.mn-main-content').addClass("sb-hide");
+        $('footer').addClass("sb-hide");
+        $('.mn-toggle-sidebar').removeClass("active-toggle"); // reset toggle button
+    });
     </script>
     @yield('scripts')
 </body>

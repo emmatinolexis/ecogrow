@@ -29,7 +29,7 @@ class AdminDashboardController extends Controller
         $ordersPending = \App\Models\Order::where('order_status', 'pending')->count();
 
         // Last 10 orders
-        $lastOrders = \App\Models\Order::with('user')->latest()->take(10)->get();
+        $lastOrders = \App\Models\Order::with('user')->orderBy('created_at', 'desc')->take(10)->get();
 
         // Products with low stock (e.g., quantity <= 5)
         $lowStockProducts = Product::where('quantity', '<=', 5)->orderBy('quantity', 'asc')->take(10)->get();

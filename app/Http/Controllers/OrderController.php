@@ -22,7 +22,7 @@ class OrderController extends Controller
     // Admin: view all orders
     public function adminIndex()
     {
-        $orders = Order::with('user', 'items.product', 'shippingAddress')->latest()->get();
+        $orders = Order::with('user', 'items.product', 'shippingAddress')->orderBy('created_at', 'desc')->get();
         return view('admin.orders.index', compact('orders'));
     }
 

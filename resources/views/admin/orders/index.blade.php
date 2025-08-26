@@ -51,7 +51,8 @@
             var table = $('#ordersTable').DataTable({
                 responsive: true,
                 dom: 'rt', // Remove DataTables default search and pagination
-                pageLength: 10
+                pageLength: 10,
+                order: [[4, 'desc']]
             });
             // Custom search
             $('#ordersSearch').on('keyup', function () {

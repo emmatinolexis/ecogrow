@@ -12,7 +12,7 @@
                 </ul>
             </div>
         @endif
-        <form action="{{ route('categories.update', $category) }}" method="POST">
+        <form action="{{ route('categories.update', $category) }}" enctype="multipart/form-data" method="POST">
             @csrf
             @method('PUT')
             <div class="mb-3">
@@ -25,7 +25,9 @@
                 <select name="parent_category_id" id="parent_category_id" class="form-control">
                     <option value="">None</option>
                     @foreach($categories as $cat)
-                        <option value="{{ $cat->id }}" {{ old('parent_category_id', $category->parent_category_id) == $cat->id ? 'selected' : '' }}>{{ $cat->name }}</option>
+                        <option value="{{ $cat->id }}" {{ old('parent_category_id', $category->parent_category_id) == $cat->id ? 'selected' : '' }}>
+                            {{ $cat->name }}
+                        </option>
                     @endforeach
                 </select>
             </div>

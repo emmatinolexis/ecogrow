@@ -178,7 +178,7 @@
   color: #313b50;
 }
 .mn-breadcrumb-list li a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-breadcrumb-list li.active {
   color: #777;
@@ -701,7 +701,7 @@
 }
 .mn-side-wishlist .mn-wishlist-inner .mn-wishlist-pro-items li .mn-pro-content .wishlist-price .stock {
   margin-left: 10px;
-  color: #3a4ee5;
+  color: #023813;
   font-weight: 400;
   font-size: 11px;
 }
@@ -878,7 +878,7 @@
   font-size: 20px;
 }
 .mn-side-search .mn-search-inner .mn-search form a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-side-search .mn-search-inner .mn-search form input {
   border-color: #313b50;
@@ -951,7 +951,7 @@
 }
 .mn-side-search .mn-search-inner .mn-search-pro-items > li .mn-pro-content .search-price .stock {
   margin-left: 10px;
-  color: #3a4ee5;
+  color: #023813;
   font-weight: 400;
   font-size: 11px;
 }
@@ -988,8 +988,8 @@
   display: block;
 }
 .mn-side-search .mn-search-inner .mn-search-also ul li a:hover {
-  color: #3a4ee5;
-  border-color: #3a4ee5;
+  color: #023813;
+  border-color: #023813;
 }
 
 /* Responsive css */
@@ -1077,7 +1077,7 @@ p {
   content: "";
   width: 200px;
   height: 200px;
-  background-color: #3a4ee5;
+  background-color: #023813;
   position: absolute;
   left: -240px;
   top: -75px;
@@ -1086,7 +1086,7 @@ p {
 }
 .mn-btn-1:hover {
   color: #fff;
-  background-color: #3a4ee5;
+  background-color: #023813;
 }
 .mn-btn-1:hover:after {
   left: -25px;
@@ -1102,7 +1102,7 @@ p {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 7px 12px;
-  background-color: #3a4ee5;
+  background-color: #023813;
   color: #fff;
   border-radius: 10px;
   border: 0;
@@ -1361,11 +1361,11 @@ textarea {
 #mn-overlay .loader {
   width: 80px;
   height: 80px;
-  border: 1px dashed #3a4ee5;
+  border: 1px dashed #023813;
   font-family: "Quicksand";
   font-size: 30px;
   font-weight: 600;
-  color: #3a4ee5;
+  color: #023813;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1398,7 +1398,7 @@ textarea {
   display: block;
   border-radius: 50%;
   background-color: #fff;
-  border: 1px solid #3a4ee5;
+  border: 1px solid #023813;
 }
 
 @-webkit-keyframes spinner {
@@ -1484,7 +1484,7 @@ textarea {
   line-height: 1;
 }
 .mn-title h2 span {
-  color: #3a4ee5;
+  color: #023813;
 }
 
 .mn-title-2 .mn-timer {
@@ -1549,8 +1549,8 @@ textarea {
   background-color: #fff;
   font-size: 14px;
   color: #313b50;
-  border: 1px solid #3a4ee5;
-  border-bottom: 5px solid #3a4ee5;
+  border: 1px solid #023813;
+  border-bottom: 5px solid #023813;
   border-radius: 5px;
   display: block;
   -webkit-box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.07);
@@ -1564,17 +1564,17 @@ textarea {
 .mn-wish-notify .add,
 .mn-compare-notify .add,
 .mn-cart-notify .add {
-  border-color: #3a4ee5;
+  border-color: #023813;
 }
 .mn-wish-notify .add a,
 .mn-compare-notify .add a,
 .mn-cart-notify .add a {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-wish-notify .add a:hover,
 .mn-compare-notify .add a:hover,
 .mn-cart-notify .add a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-wish-notify .remove,
 .mn-compare-notify .remove,
@@ -2150,13 +2150,13 @@ header {
   display: flex;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li:hover > a {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li:hover > a:after {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li:hover > a .svg_img path {
-  fill: #3a4ee5;
+  fill: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li .mega-menu {
   -webkit-transition: all 0.3s ease-in-out;
@@ -2185,7 +2185,7 @@ header {
   margin-right: 30px;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li .mega-menu li .mega-block li.menu_title a {
-  color: #3a4ee5;
+  color: #023813;
   font-size: 15px;
   font-weight: 500;
   display: block;
@@ -2195,7 +2195,7 @@ header {
   height: auto;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li .mega-menu li .mega-block li.menu_title a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li .mega-menu li .mega-block li {
   border: 0 !important;
@@ -2212,7 +2212,7 @@ header {
   height: auto;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li .mega-menu li .mega-block li a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li .mega-menu ul.mn-main-banner {
   margin-top: 20px;
@@ -2261,10 +2261,10 @@ header {
   padding-bottom: 5px;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li.active a {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li.active a i {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li {
   padding: 0;
@@ -2272,10 +2272,10 @@ header {
   display: block;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li:hover > a {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li:hover > a i {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li a {
   -webkit-transition: all 0.3s ease-in-out;
@@ -2298,10 +2298,10 @@ header {
           align-items: center;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li a:hover i {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.dropdown ul li a i {
   -webkit-transition: all 0.3s ease-in-out;
@@ -2355,13 +2355,13 @@ header {
   font-size: 18px;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu ul li.active > a {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu > ul > li {
   position: relative;
 }
 .mn-header .mn-header-items .right-header .mn-main-menu > ul > li:hover > a i {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-tool-icons {
   margin-left: 30px;
@@ -2389,7 +2389,7 @@ header {
   position: relative;
 }
 .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-search > a:hover svg path, .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-user > a:hover svg path, .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-wish > a:hover svg path, .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-cart > a:hover svg path {
-  fill: #3a4ee5;
+  fill: #023813;
 }
 .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-search > a .label, .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-user > a .label, .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-wish > a .label, .mn-header .mn-header-items .right-header .mn-tool-icons .mn-tool-cart > a .label {
   width: 15px;
@@ -2519,7 +2519,7 @@ header {
   top: 0;
   right: auto;
   left: 0;
-  background-color: #181e28;
+  background-color: #023813;
   border-right: 1px solid #293343;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -2683,7 +2683,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #3a4ee5;
+  background-color: #023813;
   border-radius: 15px;
 }
 .mn-header .mn-mobile-menu .mn-menu-inner .header-res-social ul li a i {
@@ -2732,7 +2732,7 @@ header {
   text-transform: capitalize;
 }
 .mn-header .mn-tool-user .sub-menu li a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 
 /* Responsive css */
@@ -2843,12 +2843,12 @@ header {
   width: 300px;
   height: calc(100vh - 60px);
   margin: 30px 0 30px 0;
-  background-color: #181e28;
+  background-color: #023813;
   border-radius: 0 15px 15px 0;
   position: fixed;
   top: 0;
   left: 0;
-  border: 1px solid #181e28;
+  border: 1px solid #023813;
   border-left: 0;
 }
 .mn-sidebar:after {
@@ -3026,7 +3026,7 @@ header {
 }
 .mn-sidebar .mn-sidebar-body .mn-sb-list .mn-sb-title span {
   padding-right: 10px;
-  background-color: #181e28;
+  background-color: #023813;
 }
 
 /* Responsive css */
@@ -3097,7 +3097,7 @@ footer {
   transition: all 0.1s ease-in-out;
   padding: 0 30px;
   color: #fff;
-  background-color: #181e28;
+  background-color: #023813;
   position: relative;
   border-radius: 15px 15px 0 0;
 }
@@ -3743,9 +3743,9 @@ button.btn-close.qty_close {
   text-transform: uppercase;
 }
 .mn-pro-variations ul li.active, .mn-pro-variation ul li.active {
-  background-color: #3a4ee5 !important;
+  background-color: #023813 !important;
   color: #fff !important;
-  border-color: #3a4ee5 !important;
+  border-color: #023813 !important;
 }
 .mn-pro-variations ul li.active a, .mn-pro-variation ul li.active a {
   color: #fff;
@@ -4073,7 +4073,7 @@ button.btn-close.qty_close {
   content: "\eb7b";
   position: absolute;
   display: none;
-  background: #3a4ee5;
+  background: #023813;
   font-family: "remixicon";
   font-size: 13px;
   color: #fff;
@@ -4206,7 +4206,7 @@ button.btn-close.qty_close {
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 600;
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-shop-sidebar-2 .mn-close-btn .mn-cat-close {
   position: absolute;
@@ -4364,7 +4364,7 @@ button.btn-close.qty_close {
   width: 16px;
   height: 16px;
   background: #fff;
-  border: 2px solid #3a4ee5;
+  border: 2px solid #023813;
   border-radius: 50%;
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -4375,7 +4375,7 @@ button.btn-close.qty_close {
   transition: transform 0.1s, -webkit-transform 0.1s;
 }
 .mn-price-range-slider .noUi-horizontal .noUi-handle:hover {
-  background: #3a4ee5;
+  background: #023813;
 }
 .mn-price-range-slider .noUi-connect {
   background: #777;
@@ -4699,8 +4699,8 @@ button.btn-close.qty_close {
 }
 .mn-hero .owl-dots .owl-dot.active {
   width: 25px;
-  background-color: #3a4ee5 !important;
-  border-color: #3a4ee5;
+  background-color: #023813 !important;
+  border-color: #023813;
 }
 .mn-hero .mn-hero-slide {
   background-repeat: no-repeat;
@@ -4709,10 +4709,10 @@ button.btn-close.qty_close {
   overflow-y: hidden;
 }
 .mn-hero .slide-1 {
-  background-image: url("../img/hero/1.jpg");
+  background-image: url("../img/s1.jpg");
 }
 .mn-hero .slide-2 {
-  background-image: url("../img/hero/2.jpg");
+  background-image: url("../img/s2.jpg");
 }
 .mn-hero .slide-3 {
   background-image: url("../img/hero/3.jpg");
@@ -5109,8 +5109,8 @@ button.btn-close.qty_close {
 }
 .mn-product .owl-dots button.active, .mn-related .owl-dots button.active {
   width: 25px;
-  border-color: #3a4ee5;
-  background-color: #3a4ee5;
+  border-color: #023813;
+  background-color: #023813;
 }
 
 .mn-product-card {
@@ -5148,7 +5148,7 @@ button.btn-close.qty_close {
   z-index: 2;
 }
 .mn-product-card .mn-product-img .lbl .trending {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-product-card .mn-product-img .lbl .new {
   color: #f90c4c;
@@ -5205,7 +5205,7 @@ button.btn-close.qty_close {
   height: 50px;
   padding: 1px;
   border-radius: 50%;
-  border: 1px dashed #3a4ee5;
+  border: 1px dashed #023813;
   position: absolute;
   top: 42%;
   left: 0;
@@ -5277,10 +5277,10 @@ button.btn-close.qty_close {
   color: #313b50;
 }
 .mn-product-card .mn-product-img .mn-img .mn-options ul li a:hover i {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-product-card .mn-product-img .mn-img .mn-options ul li a.active i {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-product-card .mn-product-img .mn-img.pro-loading {
   position: relative;
@@ -5338,7 +5338,7 @@ button.btn-close.qty_close {
   color: #777;
 }
 .mn-product-card .mn-product-detail .cat a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-product-card .mn-product-detail .cat ul {
   margin: 0 -2px;
@@ -5366,7 +5366,7 @@ button.btn-close.qty_close {
   text-overflow: ellipsis;
 }
 .mn-product-card .mn-product-detail h5 a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-product-card .mn-product-detail .mn-info {
   -webkit-transition: all 0.3s ease-in-out;
@@ -5427,7 +5427,7 @@ button.btn-close.qty_close {
   border-radius: 30px;
 }
 .mn-product-card .mn-product-detail .mn-pro-option ul li.active {
-  border: 1px solid #3a4ee5;
+  border: 1px solid #023813;
 }
 .mn-product-card .mn-product-detail .mn-wishlist {
   opacity: 0.8;
@@ -5501,7 +5501,7 @@ button.btn-close.qty_close {
   line-height: 0;
 }
 .mn-ser-inner .mn-service-image svg path {
-  fill: #3a4ee5;
+  fill: #023813;
 }
 
 .mn-service-desc h3 {
@@ -5553,10 +5553,10 @@ button.btn-close.qty_close {
   background-position: center;
 }
 .mn-modern-banner .modern-banner .mn-banner-img.img-1 {
-  background-image: url("../img/banner/1.jpg");
+  background-image: url("../img/home_img_1.jpg");
 }
 .mn-modern-banner .modern-banner .mn-banner-img.img-2 {
-  background-image: url("../img/banner/2.jpg");
+  background-image: url("../img/home_img_2.jpg");
 }
 .mn-modern-banner .modern-banner .mn-banner-contact {
   width: 370px;
@@ -5625,7 +5625,7 @@ button.btn-close.qty_close {
   margin: 0;
   font-size: 68px;
   font-weight: 700;
-  color: #3a4ee5;
+  color: #023813;
   text-shadow: 2px 2px #fff, -2px 2px #fff, 2px -2px #fff, -2px -2px #fff, 2px 2px 5px #f1f4f7;
   text-transform: uppercase;
 }
@@ -5671,8 +5671,8 @@ button.btn-close.qty_close {
 }
 .mn-modern-banner .owl-dots button.active {
   width: 25px;
-  border-color: #3a4ee5;
-  background-color: #3a4ee5;
+  border-color: #023813;
+  background-color: #023813;
 }
 
 .mn-offer-section {
@@ -5735,7 +5735,7 @@ button.btn-close.qty_close {
   top: 15px;
   left: 15px;
   text-transform: capitalize;
-  background-color: #3a4ee5;
+  background-color: #023813;
   color: #fff;
   opacity: 0.8;
 }
@@ -6026,7 +6026,7 @@ button.btn-close.qty_close {
   color: #999;
 }
 .mn-blog .blog-info .detail label a:hover, .mn-blog-section .blog-info .detail label a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-blog .blog-info .detail h3, .mn-blog-section .blog-info .detail h3 {
   margin: 10px 0 15px 0;
@@ -6046,7 +6046,7 @@ button.btn-close.qty_close {
   text-overflow: ellipsis;
 }
 .mn-blog .blog-info .detail h3 a:hover, .mn-blog-section .blog-info .detail h3 a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-blog .blog-info .detail p, .mn-blog-section .blog-info .detail p {
   font-size: 14px;
@@ -6055,7 +6055,7 @@ button.btn-close.qty_close {
 .mn-blog .blog-info .detail .more-info a, .mn-blog-section .blog-info .detail .more-info a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: #3a4ee5;
+  color: #023813;
   font-size: 13px;
   line-height: 15px;
   text-decoration: none;
@@ -6068,16 +6068,16 @@ button.btn-close.qty_close {
 }
 .mn-blog .blog-info .detail .more-info a:hover, .mn-blog-section .blog-info .detail .more-info a:hover {
   background: #fff;
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-blog .blog-info .detail .more-info a:hover i, .mn-blog-section .blog-info .detail .more-info a:hover i {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-blog .blog-info .detail .more-info a i, .mn-blog-section .blog-info .detail .more-info a i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-left: 5px;
-  color: #3a4ee5;
+  color: #023813;
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6124,8 +6124,8 @@ button.btn-close.qty_close {
 }
 .mn-blog .owl-dots button.active, .mn-blog-section .owl-dots button.active {
   width: 25px;
-  border-color: #3a4ee5;
-  background-color: #3a4ee5;
+  border-color: #023813;
+  background-color: #023813;
 }
 
 /**  Blog Sidebar  **/
@@ -6268,11 +6268,11 @@ button.btn-close.qty_close {
   top: -1px;
   width: 18px;
   height: 18px;
-  border: 1px solid #3a4ee5;
+  border: 1px solid #023813;
   content: "\eb7b";
   position: absolute;
   display: none;
-  background: #3a4ee5;
+  background: #023813;
   font-family: "remixicon";
   font-size: 12px;
   color: #fff;
@@ -6316,7 +6316,7 @@ button.btn-close.qty_close {
 }
 .mn-blogs-sidebar .mn-sidebar-block .mn-sidebar-block-item .mn-sidebar-block-detial a {
   font-size: 14px;
-  color: #3a4ee5;
+  color: #023813;
 }
 
 /* Responsive Blog css */
@@ -6385,7 +6385,7 @@ button.btn-close.qty_close {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #3a4ee5;
+  color: #023813;
   letter-spacing: 0.6px;
   line-height: 1.2;
 }
@@ -6452,7 +6452,7 @@ button.btn-close.qty_close {
   position: absolute;
   width: 45px;
   height: auto;
-  fill: #3a4ee5;
+  fill: #023813;
   opacity: 0.5;
 }
 
@@ -6528,7 +6528,7 @@ button.btn-close.qty_close {
   width: 100%;
   height: 100%;
   content: "";
-  background: #3a4ee5;
+  background: #023813;
   z-index: 2;
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
@@ -6605,7 +6605,7 @@ button.btn-close.qty_close {
   font-size: 26px;
   line-height: 38px;
   font-weight: 600;
-  color: #3a4ee5;
+  color: #023813;
   position: relative;
   display: inline;
   padding: 0;
@@ -6798,7 +6798,7 @@ button.btn-close.qty_close {
   position: absolute;
   width: 45px;
   height: auto;
-  fill: #3a4ee5;
+  fill: #023813;
 }
 
 .svg_img.test_svg.top {
@@ -6873,8 +6873,8 @@ button.btn-close.qty_close {
 }
 .mn-team-section .owl-dots button.active {
   width: 25px;
-  border-color: #3a4ee5;
-  background-color: #3a4ee5;
+  border-color: #023813;
+  background-color: #023813;
 }
 .mn-team-section .mn-team-box {
   position: relative;
@@ -7117,7 +7117,7 @@ button.btn-close.qty_close {
 }
 .mn-shop .mn-pro-list-top .mn-gl-btn .grid-btn i {
   font-size: 23px;
-  color: #3a4ee5;
+  color: #023813;
   line-height: 0;
 }
 .mn-shop .mn-pro-list-top .grid-btn.active {
@@ -7245,7 +7245,7 @@ button.btn-close.qty_close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #3a4ee5;
+  background-color: #023813;
   color: #fff;
   border-radius: 10px;
 }
@@ -7409,7 +7409,7 @@ button.btn-close.qty_close {
   border-radius: 15px;
 }
 .mn-single-product .single-nav-thumb .slick-slide.slick-current.slick-active img {
-  border-color: #3a4ee5;
+  border-color: #023813;
 }
 .mn-single-product .single-nav-thumb .slick-arrow {
   -webkit-transition: all 0.3s ease-in-out;
@@ -7575,7 +7575,7 @@ button.btn-close.qty_close {
 .mn-single-product .single-pro-content .mn-single-price-stoke .mn-single-ps-title {
   line-height: 1;
   font-size: 16px;
-  color: #3a4ee5;
+  color: #023813;
   letter-spacing: 0;
 }
 .mn-single-product .single-pro-content .mn-single-price-stoke .mn-single-sku {
@@ -7649,7 +7649,7 @@ button.btn-close.qty_close {
 }
 .mn-single-product .single-pro-content .mn-single-price .final-price .price-des {
   margin-left: 15px;
-  color: #3a4ee5;
+  color: #023813;
   font-weight: 500;
   font-size: 18px;
 }
@@ -7994,13 +7994,13 @@ button.btn-close.qty_close {
 }
 .mn-single-product .mn-single-pro-tab-nav .nav-tabs .nav-link:hover {
   color: #fff;
-  background-color: #3a4ee5;
-  border: 1px solid #3a4ee5;
+  background-color: #023813;
+  border: 1px solid #023813;
 }
 .mn-single-product .mn-single-pro-tab-nav .nav-tabs .nav-link.active {
   color: #fff;
-  background-color: #3a4ee5;
-  border: 1px solid #3a4ee5;
+  background-color: #023813;
+  border: 1px solid #023813;
 }
 .mn-single-product .mn-single-pro-tab-nav li {
   display: inline-block;
@@ -8140,7 +8140,7 @@ button.btn-close.qty_close {
   color: #313b50;
 }
 .mn-single-product .mn-single-pro-tab-content .mn-t-review-item .mn-t-review-top a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-single-product .mn-single-pro-tab-content .mn-t-review-item .mn-t-review-bottom p {
   width: 100%;
@@ -8444,7 +8444,7 @@ button.btn-close.qty_close {
   font-size: 14px;
 }
 .mn-blog-comments .mn-single-comment-wrapper .mn-blog-comment-content .mn-blog-details-btn a {
-  color: #3a4ee5;
+  color: #023813;
   font-size: 13px;
 }
 .mn-blog-comments .mn-blog-cmt-form .mn-blog-form input {
@@ -8682,7 +8682,7 @@ button.btn-close.qty_close {
   width: 70px;
   height: 70px;
   margin-right: 15px;
-  background-color: #3a4ee5;
+  background-color: #023813;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8992,7 +8992,7 @@ button.btn-close.qty_close {
 .mn-cart-content .table-content table tbody > tr td.mn-cart-pro-remove a {
   font-size: 22px;
   margin: 0 auto;
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-cart-content .table-content table tbody > tr td.mn-cart-pro-remove a i {
   -webkit-transition: all 0.3s ease-in-out;
@@ -9161,7 +9161,7 @@ button.btn-close.qty_close {
   cursor: pointer;
 }
 .mn-cart-summary-bottom .mn-cart-summary .text-right a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-cart-summary-bottom .mn-cart-summary .mn-cart-summary-total {
   border-top: 1px solid #e5e5e5;
@@ -9274,13 +9274,13 @@ button.btn-close.qty_close {
   top: 0;
   border-radius: 100%;
   background: #fff;
-  border: 1px solid #3a4ee5;
+  border: 1px solid #023813;
 }
 .mn-checkout-section [type=radio]:checked + label:after {
   content: "";
   width: 8px;
   height: 8px;
-  background: #3a4ee5;
+  background: #023813;
   position: absolute;
   top: 4px;
   left: 4px;
@@ -9472,7 +9472,7 @@ button.btn-close.qty_close {
   line-height: 24px;
 }
 .mn-check-login-form .mn-check-login-fp:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-check-login-form .mn-check-login-btn {
   display: -webkit-box;
@@ -9669,7 +9669,7 @@ button.btn-close.qty_close {
   cursor: pointer;
 }
 .mn-checkout-summary .text-right a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-checkout-summary .mn-checkout-summary-total {
   border-top: 1px solid #e5e5e5;
@@ -9732,7 +9732,7 @@ button.btn-close.qty_close {
   padding-top: 2px;
 }
 .mn-sidebar-wrap .mn-sidebar-block .mn-sb-block-content .mn-checkout-pro .mn-pro-size li.active a {
-  background-color: #3a4ee5;
+  background-color: #023813;
   color: #fff;
 }
 .mn-sidebar-wrap .mn-sidebar-block .mn-sb-block-content .mn-checkout-pro .mn-product-inner {
@@ -9771,7 +9771,7 @@ button.btn-close.qty_close {
   font-weight: 600;
 }
 .mn-sidebar-wrap .mn-sidebar-block .mn-sb-block-content .mn-checkout-pro .mn-product-inner .mn-pro-content h5 a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-sidebar-wrap .mn-sidebar-block .mn-sb-block-content .mn-checkout-pro .mn-product-inner .mn-pro-content .mn-price span.old-price {
   font-size: 14px;
@@ -9955,7 +9955,7 @@ button.btn-close.qty_close {
   cursor: pointer;
 }
 .mn-sidebar-wrap .mn-pay-agree a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-sidebar-wrap .mn-pay-agree a span {
   font-weight: 500;
@@ -9978,13 +9978,13 @@ button.btn-close.qty_close {
   height: 18px;
   left: -1px;
   top: 0;
-  border: 1px solid #3a4ee5;
+  border: 1px solid #023813;
   content: "\eb7b";
   position: relative;
   display: none;
   font-family: "remixicon";
   font-size: 15px;
-  color: #3a4ee5;
+  color: #023813;
   line-height: 16px;
   text-align: center;
   border-radius: 5px;
@@ -10210,7 +10210,7 @@ button.btn-close.qty_close {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 15px;
-  background-color: #3a4ee5;
+  background-color: #023813;
 }
 .mn-compare-box .mn-compare-col .mn-action ul li a:hover {
   background-color: #ffd783 !important;
@@ -10442,7 +10442,7 @@ button.btn-close.qty_close {
           justify-content: flex-end;
 }
 .mn-login-wrapper .mn-login-container .mn-login-form .mn-login-fp label a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-login-wrapper .mn-login-container .mn-login-form .mn-login-btn {
   display: -webkit-box;
@@ -10492,7 +10492,7 @@ button.btn-close.qty_close {
   font-weight: 600;
 }
 .mn-login-wrapper .mn-login-container .mn-login-form .mn-login-btn span a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 
 .mn-login-img img {
@@ -10549,13 +10549,13 @@ button.btn-close.qty_close {
   height: 18px;
   left: -1px;
   top: 0;
-  border: 1px solid #3a4ee5;
+  border: 1px solid #023813;
   content: "\eb7b";
   position: relative;
   display: none;
   font-family: "remixicon";
   font-size: 15px;
-  color: #3a4ee5;
+  color: #023813;
   line-height: 16px;
   text-align: center;
   border-radius: 5px;
@@ -10779,7 +10779,7 @@ button.btn-close.qty_close {
   font-weight: 600;
 }
 .mn-register-wrapper .mn-register-container .mn-register-form .mn-register-btn span a:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 
 /* Responsive Register CSS */
@@ -10962,14 +10962,14 @@ button.btn-close.qty_close {
   cursor: default;
 }
 .mn-track .mn-step-active:hover .mn-step-icon {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-track .mn-step-active .mn-step-icon {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-track .mn-step-completed .mn-step-indicator {
   border-color: transparent;
-  background-color: #3a4ee5;
+  background-color: #023813;
   color: #fff;
   line-height: 1.25rem;
 }
@@ -10979,7 +10979,7 @@ button.btn-close.qty_close {
 }
 .mn-track .mn-step-completed:hover .mn-step-indicator {
   border-color: transparent;
-  background-color: #3a4ee5;
+  background-color: #023813;
   color: #fff;
   line-height: 1.25rem;
 }
@@ -11110,7 +11110,7 @@ ul.gi li {
           align-items: center;
 }
 .mn-wishlist-page .mn-table tbody tr td .mn-item:hover {
-  color: #3a4ee5;
+  color: #023813;
 }
 .mn-wishlist-page .mn-table tbody tr td .tbl-btn a {
   width: 30px;
