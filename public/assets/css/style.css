@@ -3044,15 +3044,11 @@ header {
     display: block;
   }
   .mn-sidebar.sidebar-hide {
-    left: 0;
+    left: -95%; /* hidden */
   }
   .mn-sidebar {
-    height: 100%;
-    margin: 0;
-    border-radius: 0;
-    z-index: 40;
-    left: -300px;
-    border-right: 1px solid #293343;
+    width: 95%;
+    left: 0; /* visible */
   }
   .mn-sidebar .side-close {
     display: -webkit-box;
