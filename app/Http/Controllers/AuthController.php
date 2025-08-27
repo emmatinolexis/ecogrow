@@ -25,7 +25,7 @@ class AuthController extends Controller
                 Auth::logout();
                 return back()->withErrors(['email' => 'Your account is inactive.']);
             }
-            return redirect()->intended('/');
+            return redirect()->intended(route('admin.dashboard'));
         }
 
         return back()->withErrors([
