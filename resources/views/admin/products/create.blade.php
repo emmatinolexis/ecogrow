@@ -109,7 +109,9 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-create">Create</button>
+            <button type="submit" class="btn btn-success">
+                <span class="material-icons" style="vertical-align:middle;">add_shopping_cart</span> Add Product
+            </button>
             <a href="{{ route('products.index') }}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>

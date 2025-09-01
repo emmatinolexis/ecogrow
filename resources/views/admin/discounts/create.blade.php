@@ -39,7 +39,9 @@
                 </select>
                 @error('status')<div class="text-danger">{{ $message }}</div>@enderror
             </div>
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" class="btn btn-success">
+                <span class="material-icons" style="vertical-align:middle;">local_offer</span> Add Discount
+            </button>
             <a href="{{ route('discounts.index') }}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>

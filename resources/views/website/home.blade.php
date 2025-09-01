@@ -93,65 +93,36 @@
             <section class="mn-testimonials p-tb-15">
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="section-title">
+                            <h2>Customers <span>Review</span></h2>
+                        </div>
                         <div class="testim-bg">
-                            <div class="section-title d-none">
-                                <h2>Customers <span>Review</span></h2>
-                            </div>
                             <div class="mn-test-outer mn-testimonials">
                                 <ul class="mn-testimonial-slider owl-carousel">
+                                    @forelse($customerReviews as $review)
                                     <li class="mn-test-item">
                                         <img src="assets/img/icons/top-quotes.svg" class="svg_img test_svg top"
                                             alt="user">
                                         <div class="mn-test-inner">
                                             <div class="mn-test-img">
-                                                <img alt="testimonial" title="testimonial" src="assets/img/user/1.jpg">
+                                                @if($review->image)
+                                                <img alt="testimonial" title="testimonial"
+                                                    src="{{ asset('storage/' . $review->image) }}">
+                                                @endif
                                             </div>
                                             <div class="mn-test-content">
-                                                <div class="mn-test-desc">Lorem Ipsum is simply dummy text of
-                                                    the printing and industry. Lorem Ipsum has been the
-                                                    industry's standard dummy text ever since the 1500s.</div>
-                                                <div class="mn-test-name">Mariya Klinton</div>
-                                                <div class="mn-test-designation">(CEO)</div>
+                                                <div class="mn-test-desc">{{ $review->review }}</div>
+                                                <div class="mn-test-name">{{ $review->customer_name }}</div>
                                             </div>
                                         </div>
                                         <img src="assets/img/icons/bottom-quotes.svg" class="svg_img test_svg bottom"
                                             alt="">
                                     </li>
-                                    <li class="mn-test-item ">
-                                        <img src="assets/img/icons/top-quotes.svg" class="svg_img test_svg top" alt="">
-                                        <div class="mn-test-inner">
-                                            <div class="mn-test-img">
-                                                <img alt="testimonial" title="testimonial" src="assets/img/user/2.jpg">
-                                            </div>
-                                            <div class="mn-test-content">
-                                                <div class="mn-test-desc">Standard dummy text ever since the
-                                                    1500s, when an unknown printer took a galley of type and
-                                                    this is the lorem and scrambled it to make a type specimen.
-                                                </div>
-                                                <div class="mn-test-name">John Doe</div>
-                                                <div class="mn-test-designation">(CFO)</div>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/icons/bottom-quotes.svg" class="svg_img test_svg bottom"
-                                            alt="">
-                                    </li>
+                                    @empty
                                     <li class="mn-test-item">
-                                        <img src="assets/img/icons/top-quotes.svg" class="svg_img test_svg top" alt="">
-                                        <div class="mn-test-inner">
-                                            <div class="mn-test-img">
-                                                <img alt="testimonial" title="testimonial" src="assets/img/user/3.jpg">
-                                            </div>
-                                            <div class="mn-test-content">
-                                                <div class="mn-test-desc">When an unknown printer took a galley
-                                                    of type and scrambled it to make a type specimen Lorem Ipsum
-                                                    has been the industry's and ever since to the 1500s, </div>
-                                                <div class="mn-test-name">Nency Lykra</div>
-                                                <div class="mn-test-designation">(Manager)</div>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/icons/bottom-quotes.svg" class="svg_img test_svg bottom"
-                                            alt="">
+                                        <div class="mn-test-content">No customer reviews yet.</div>
                                     </li>
+                                    @endforelse
                                 </ul>
                             </div>
                             <span class="mn-testi-shape-2"></span>

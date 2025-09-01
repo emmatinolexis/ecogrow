@@ -44,7 +44,9 @@
                     <option value="inactive" {{ old('status') == 'inactive' ? 'selected' : '' }}>Inactive</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-create">Create</button>
+            <button type="submit" class="btn btn-success">
+                <span class="material-icons" style="vertical-align:middle;">add_box</span> Add Category
+            </button>
             <a href="{{ route('categories.index') }}" class="btn btn-secondary">Back</a>
         </form>
     </div>

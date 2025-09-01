@@ -20,7 +20,9 @@
                 <input type="file" name="logo" class="form-control">
                 @error('logo')<div class="text-danger">{{ $message }}</div>@enderror
             </div>
-            <button type="submit" class="btn btn-create">Create</button>
+            <button type="submit" class="btn btn-success">
+                <span class="material-icons" style="vertical-align:middle;">add_business</span> Add Brand
+            </button>
             <a href="{{ route('brands.index') }}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>

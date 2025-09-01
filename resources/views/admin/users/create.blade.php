@@ -40,7 +40,9 @@
                 </select>
                 @error('status')<div class="text-danger">{{ $message }}</div>@enderror
             </div>
-            <button type="submit" class="btn btn-create">Create</button>
+            <button type="submit" class="btn btn-success">
+                <span class="material-icons" style="vertical-align:middle;">person_add</span> Add User
+            </button>
             <a href="{{ route('users.index') }}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>

@@ -305,16 +305,20 @@
                                         <div class="mn-footer-links mn-footer-dropdown">
                                             <ul class="align-items-center">
                                                 <li class="mn-footer-link">
-                                                    <a href="javascript:void(0)"><i class="ri-facebook-fill"></i></a>
+                                                    <a href="facebook.com/EcoGrowFms" target="_blank"><i
+                                                            class="ri-facebook-fill"></i></a>
                                                 </li>
                                                 <li class="mn-footer-link">
-                                                    <a href="javascript:void(0)"><i class="ri-twitter-fill"></i></a>
+                                                    <a href="tiktok.com/@EcoGrowFms" target="_blank"><i
+                                                            class="ri-tiktok-fill"></i></a>
                                                 </li>
                                                 <li class="mn-footer-link">
-                                                    <a href="javascript:void(0)"><i class="ri-linkedin-fill"></i></a>
+                                                    <a href="linkedin.com/company/EcoGrowFms" target="_blank"><i
+                                                            class="ri-linkedin-fill"></i></a>
                                                 </li>
                                                 <li class="mn-footer-link">
-                                                    <a href="javascript:void(0)"><i class="ri-instagram-line"></i></a>
+                                                    <a href="instagram.com/EcoGrowFms" target="_blank"><i
+                                                            class="ri-instagram-line"></i></a>
                                                 </li>
                                             </ul>
                                         </div>

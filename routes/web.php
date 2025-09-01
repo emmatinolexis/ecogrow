@@ -36,9 +36,7 @@ Route::get('/product_details', function () {
     return view('website.product_details');
 });
 
-Route::get('/about', function () {
-    return view('website.about');
-})->name('website.about');
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('website.about');
 
 Route::get('/blog', [App\Http\Controllers\WebsiteBlogController::class, 'index'])->name('website.blog');
 Route::get('/blog/{id}', [App\Http\Controllers\WebsiteBlogController::class, 'show'])->name('website.blog.details');
@@ -72,13 +70,10 @@ Route::middleware(['auth', 'admin.only'])->prefix('admin')->group(function () {
     Route::resource('brands', \App\Http\Controllers\BrandController::class);
     Route::resource('products', \App\Http\Controllers\ProductController::class);
     Route::resource('discounts', \App\Http\Controllers\DiscountController::class);
+    Route::resource('customer_reviews', \App\Http\Controllers\CustomerReviewController::class, ['as' => 'admin']);
+    Route::resource('team_members', \App\Http\Controllers\TeamMemberController::class, ['as' => 'admin']);
     Route::delete('products/images/{id}', [\App\Http\Controllers\ProductController::class, 'destroyImage'])->name('products.destroyImage');
     Route::post('products/upload-image', [\App\Http\Controllers\ProductController::class, 'uploadImage'])->name('products.uploadImage');
-    // Route::prefix('admin')->middleware(['auth', 'is_admin'])->group(function () {
-    //     Route::resource('blogs', App\Http\Controllers\AdminBlogController::class, [
-    //         'as' => 'admin'
-    //     ]);
-    // });
     Route::resource('blogs', App\Http\Controllers\AdminBlogController::class, [
         'as' => 'admin'
     ]);
