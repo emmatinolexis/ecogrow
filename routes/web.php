@@ -11,7 +11,6 @@ Route::get('admin/login', [AuthController::class, 'showLoginForm'])->name('login
 Route::post('admin/login', [AuthController::class, 'login']);
 Route::post('admin/logout', [AuthController::class, 'logout'])->name('logout');
 
-
 Route::middleware(['auth'])->group(function () {
     // Customer order routes
     Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
@@ -23,6 +22,9 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/shipping-addresses', [ShippingAddressController::class, 'store'])->name('shipping_addresses.store');
     Route::put('/shipping-addresses/{id}', [ShippingAddressController::class, 'update'])->name('shipping_addresses.update');
     Route::delete('/shipping-addresses/{id}', [ShippingAddressController::class, 'destroy'])->name('shipping_addresses.destroy');
+
+    Route::get('/profile', [App\Http\Controllers\WebsiteProfileController::class, 'show'])->name('website.profile');
+    Route::put('/profile', [App\Http\Controllers\WebsiteProfileController::class, 'update'])->name('website.profile.update');
 });
 
 

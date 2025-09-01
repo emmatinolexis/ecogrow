@@ -179,15 +179,10 @@
                                     </li>
                                     @else
                                     <li>
-                                        <form method="POST" action="{{ route('customer.logout') }}"
-                                            style="display:inline;">
+                                        <a href="#" id="logout-link">Logout</a>
+                                        <form id="logout-form" method="POST" action="{{ route('customer.logout') }}">
                                             @csrf
-                                            <button type="submit"
-                                                style="background:none;border:none;padding:0;margin:0;color:inherit;cursor:pointer;">Logout</button>
                                         </form>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('checkout') }}">Checkout</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('shipping_addresses.index') }}">Shipping Address</a>
@@ -426,6 +421,7 @@
             });
         });
     });
+
     $(document).ready(function() {
         // hide sidebar and overlay by default
         $('.mn-sidebar-overlay').hide();
@@ -443,6 +439,13 @@
                 $('.mn-toggle-sidebar').removeClass("active-toggle");
             }
         }).trigger("resize");
+
+        // logout form submission
+        $("#logout-link").on("click", function(e) {
+            e.preventDefault();
+            alert('Logging out...');
+            $("#logout-form").submit();
+        });
     });
     </script>
     @yield('scripts')
